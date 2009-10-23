@@ -11,3 +11,5 @@ _ReSharper*/
 Logs/
 *.log
 build/
+Distribution/*.dll
+Distribution/Scripts/*.*
