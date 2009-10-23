@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecisionesInteligentes.Rjs.Web", "DecisionesInteligentes.Rjs.Web\DecisionesInteligentes.Rjs.Web.csproj", "{2E98BEC4-6AE3-4555-9648-41842AE86706}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecisionesInteligentes.Rjs.Mvc", "DecisionesInteligentes.Rjs.Mvc\DecisionesInteligentes.Rjs.Mvc.csproj", "{C5F3630F-1546-4EA0-8143-654E2F78E6F8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E98BEC4-6AE3-4555-9648-41842AE86706}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E98BEC4-6AE3-4555-9648-41842AE86706}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E98BEC4-6AE3-4555-9648-41842AE86706}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E98BEC4-6AE3-4555-9648-41842AE86706}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5F3630F-1546-4EA0-8143-654E2F78E6F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5F3630F-1546-4EA0-8143-654E2F78E6F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5F3630F-1546-4EA0-8143-654E2F78E6F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5F3630F-1546-4EA0-8143-654E2F78E6F8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
