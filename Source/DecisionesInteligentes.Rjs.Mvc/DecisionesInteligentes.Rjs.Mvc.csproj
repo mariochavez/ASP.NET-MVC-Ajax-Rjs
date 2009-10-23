@@ -68,7 +68,6 @@
   </Target>
   -->
   <PropertyGroup>
-    <PostBuildEvent>copy $(TargetPath) $(SolutionDir)\..\Distribution\$(TargetFileName)
-copy $(ProjectDir)\scripts\*.* $(SolutionDir)\..\Distribution\Scripts\</PostBuildEvent>
+    <PostBuildEvent>copy $(TargetPath) $(SolutionDir)\..\Distribution\$(TargetFileName)</PostBuildEvent>
   </PropertyGroup>
 </Project>
