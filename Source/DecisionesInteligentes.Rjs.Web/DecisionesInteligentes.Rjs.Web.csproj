@@ -31,6 +31,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DecisionesInteligentes.Rjs.Mvc, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Distribution\DecisionesInteligentes.Rjs.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Core">
@@ -94,12 +98,6 @@
     <Content Include="Views\Shared\LogOnUserControl.ascx" />
     <Content Include="Views\Shared\Site.Master" />
     <Content Include="Views\Web.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\DecisionesInteligentes.Rjs.Mvc\DecisionesInteligentes.Rjs.Mvc.csproj">
-      <Project>{C5F3630F-1546-4EA0-8143-654E2F78E6F8}</Project>
-      <Name>DecisionesInteligentes.Rjs.Mvc</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

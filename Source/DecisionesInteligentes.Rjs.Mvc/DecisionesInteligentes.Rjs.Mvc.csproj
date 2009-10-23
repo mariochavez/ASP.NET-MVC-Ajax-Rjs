@@ -56,6 +56,9 @@
     <Compile Include="RjsController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\DecisionesInteligentesRjs-1.0.js" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
@@ -64,4 +67,8 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  <PropertyGroup>
+    <PostBuildEvent>copy $(TargetPath) $(SolutionDir)\..\Distribution\$(TargetFileName)
+copy $(ProjectDir)\scripts\*.* $(SolutionDir)\..\Distribution\Scripts\</PostBuildEvent>
+  </PropertyGroup>
 </Project>
