@@ -7,3 +7,4 @@ $('input#name').val('');
 $('#lista').prepend(html);
 $('#<%=Html.Encode(Model.Id)%>').hide();
 $('#<%=Html.Encode(Model.Id)%>').slideDown();
+$('#<%=Html.Encode(Model.Id)%>').highlight();

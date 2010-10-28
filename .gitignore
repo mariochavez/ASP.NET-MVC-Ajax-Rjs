@@ -1,4 +1,7 @@
 *.bak
+*.userprefs
+*.pid
+*.pidb
 *.*scc
 *.user
 *.suo
@@ -14,3 +17,4 @@ build/
 Distribution/*.dll
 Distribution/*.pdb
 Distribution/Scripts/*.*
+*.*~

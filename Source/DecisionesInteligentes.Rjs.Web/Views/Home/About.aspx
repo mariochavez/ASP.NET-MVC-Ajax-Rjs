@@ -8,5 +8,6 @@
     <h2>About</h2>
     <p>
         Put content here.
+        <%= Ajax.ActionLink("Hello", "Hello", new AjaxOptions {}) %>
     </p>
 </asp:Content>

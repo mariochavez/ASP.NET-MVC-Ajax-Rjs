@@ -1,7 +1,5 @@
 ﻿/* 
-The MIT License
-
-Copyright (c) <year> <copyright holders>
+Copyright (c) 2009 Mario Alberto Chavez Cardenas
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -86,6 +84,32 @@ var RemoteLink = {
         });
 
         return false;
+    }
+};
+
+var CascadeCombo = {
+	setup: function() {
+        $('select.cascade').live('change', CascadeCombo.change);
+    },
+    change: function() {
+    	var url = '/' + $(this).attr('rel') + '/' + $(this).attr('name') + 'Change';
+    	var data = $(this).val();
+    	
+    	var currentCombo = $(this);
+    	currentCombo.showLoading();
+    	$.ajax({
+    		url: url,
+    		data: { Id: data},
+    		type: 'post',
+    		dataType: 'script',
+    		complete: function(request, settings) {
+                currentCombo.removeLoading();
+            },
+            error: function(XMLHttpRequest, textStatus, errorThrown) {
+                currentCombo.removeLoading();
+                alert(textStatus);
+            }
+         });
     }
 };
 

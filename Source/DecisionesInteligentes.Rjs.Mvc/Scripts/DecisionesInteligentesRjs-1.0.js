@@ -87,6 +87,30 @@ var RemoteLink = {
     }
 };
 
+var CascadeCombo = {
+	setup: function() {
+        $('select.cascade').live('change', CascadeCombo.change);
+    },
+    change: function() {
+    	var url = '/' + $(this).attr('rel') + '/' + $(this).attr('name') + 'Change';
+    	var data = $(this).val();
+    	var currentCombo = $(this);
+    	$.ajax({
+    		url: url,
+    		data: { Id: data},
+    		type: 'post',
+    		dataType: 'script',
+    		complete: function(request, settings) {
+                currentCombo.removeLoading();
+            },
+            error: function(XMLHttpRequest, textStatus, errorThrown) {
+                currentCombo.removeLoading();
+                alert(textStatus);
+            }
+         });
+    }
+};
+
 (function($) {
     function Loading() {
         var self = this
